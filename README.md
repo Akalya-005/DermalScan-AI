@@ -1,87 +1,150 @@
-🧴 DermalScan AI – Skin Disease Detection System
-📌 Overview
+🧴 DermalScan AI – Intelligent Skin Analysis System
 
-DermalScan AI is a deep learning–based computer vision system developed to analyze skin images and detect potential skin conditions. The project focuses on leveraging AI to assist in early detection and awareness of dermatological issues using image-based analysis.
+An AI-powered skin analysis web application developed during the Infosys Springboard Internship, designed to detect skin conditions, analyze facial features, and provide insights using deep learning and computer vision techniques.
 
-This project was developed as part of my internship experience at Infosys, where I worked on building and optimizing real-world AI solutions.
+🚀 Project Overview
 
-🚀 Features
-🔍 Skin condition detection using deep learning
-🧠 Image classification with high accuracy
-🧹 Data preprocessing and augmentation pipeline
-📊 Model evaluation and performance tracking
-⚡ Scalable and adaptable for real-world applications
-🛠️ Tech Stack
-Programming Language: Python
-Libraries/Frameworks: TensorFlow / Keras / PyTorch
-Computer Vision: OpenCV
-Data Handling: NumPy, Pandas
-Visualization: Matplotlib, Seaborn
+DermalScan AI is an end-to-end intelligent system that analyzes facial images to:
+
+Detect skin conditions
+Estimate age-related features
+Provide visual and analytical outputs
+
+The system integrates Deep Learning (CNN) and Computer Vision techniques to deliver accurate and real-time predictions.
+
+It is built as a full-stack application with a user-friendly frontend and a powerful backend inference engine.
+
+➡️ Similar systems use CNN models and image-processing pipelines to classify dermatological conditions effectively
+
+✨ Key Features
+📸 Image upload with real-time preview
+🧠 AI-based skin condition detection
+👤 Face detection (single & multiple faces)
+🎯 Age estimation using deep learning
+🧩 Multi-face handling using Non-Maximum Suppression (NMS)
+🖼️ Annotated output visualization
+📊 Prediction summary & performance tracking
+📁 Export results (CSV + images)
+🌐 Clean and responsive UI
+🏗️ System Architecture
+User Input Image
+        ↓
+Face Detection (OpenCV / DNN)
+        ↓
+Preprocessing (Resize, Normalize)
+        ↓
+Deep Learning Model (CNN)
+        ↓
+Prediction (Skin Condition + Age)
+        ↓
+Visualization & Output (UI + Export)
+🧠 Technologies Used
+🔹 Frontend
+HTML, CSS, JavaScript
+React.js / Vite (if used in your repo)
+🔹 Backend
+Python
+Flask
+🔹 AI / ML
+TensorFlow / Keras
+OpenCV
+CNN (Convolutional Neural Networks)
+🔹 Tools
+Git & GitHub
+VS Code / PyCharm
+Jupyter Notebook
 📂 Project Structure
 DermalScan-AI/
-│── dataset/               # Skin image dataset
-│── models/                # Saved trained models
-│── notebooks/             # Jupyter notebooks for experiments
-│── src/
-│   ├── preprocessing.py   # Image cleaning & augmentation
-│   ├── train_model.py     # Model training script
-│   ├── predict.py         # Prediction script
-│── requirements.txt       # Dependencies
-│── README.md              # Project documentation
-⚙️ How It Works
-Input: Skin image uploaded by user
-Preprocessing: Resize, normalize, and augment images
-Model: Deep learning model (CNN-based) processes image
-Output: Predicted skin condition with confidence score
-🧪 Model Details
-Model Type: Convolutional Neural Network (CNN)
-Techniques Used:
-Data Augmentation
-Transfer Learning (optional)
-Hyperparameter Tuning
-Evaluation Metrics:
-Accuracy
-Precision, Recall
-Confusion Matrix
-📈 Results
-Achieved reliable classification performance on test data
-Improved accuracy through preprocessing and tuning
-Demonstrated potential for real-world healthcare applications
-▶️ Installation & Setup
-# Clone repository
+│
+├── client/                # Frontend (React / UI)
+├── server/                # Backend (Flask APIs)
+├── model/                 # Trained ML models
+├── dataset/               # Training dataset
+├── static/                # Images / assets
+├── templates/             # HTML templates
+├── app.py                 # Main backend file
+├── requirements.txt       # Dependencies
+└── README.md              # Documentation
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
 git clone https://github.com/Akalya-005/DermalScan-AI.git
-
-# Navigate to project folder
 cd DermalScan-AI
-
-# Install dependencies
+2️⃣ Create Virtual Environment
+python -m venv venv
+source venv/bin/activate   # (Linux/Mac)
+venv\Scripts\activate      # (Windows)
+3️⃣ Install Dependencies
 pip install -r requirements.txt
-▶️ Run the Project
-# Train model
-python src/train_model.py
-https://www.linkedin.com/in/akalya-k-548937294?utm_source=share_via&utm_content=profile&utm_medium=member_android
-# Make predictions
-python src/predict.py
-📸 Sample Output
-Input: Skin image
-Output: Predicted condition (e.g., Acne / Eczema / Normal) with probability score
-🌍 Real-World Impact
-Supports early detection of skin conditions
-Reduces dependency on immediate clinical diagnosis
-Useful for awareness and preliminary screening
-📚 Learning Outcomes
-Hands-on experience with deep learning & computer vision
-Model training, evaluation, and optimization
-Real-world AI system development lifecycle
+4️⃣ Run the Application
+python app.py
+5️⃣ Open in Browser
+http://127.0.0.1:5000/
+🧪 How It Works
+User uploads an image
+System detects face(s) using OpenCV
+Image is preprocessed (resize, normalize)
+CNN model analyzes features
+Outputs:
+Skin condition classification
+Age estimation
+Results are displayed with annotations
+📊 Model Details
+Model Type: Convolutional Neural Network (CNN)
+Task: Image Classification + Feature Extraction
+Training:
+Image preprocessing & augmentation
+Optimization using Adam / SGD
+Output:
+Class probabilities
+Confidence score
+📈 Performance Metrics
+Accuracy
+Precision
+Recall
+F1 Score
+
+(You can update with your actual values if needed)
+
+💡 Use Cases
+🏥 Early skin condition detection
+💄 Skincare analysis & recommendations
+📱 Health-tech mobile/web apps
+🧪 Research in dermatology AI
+⚠️ Limitations
+Not a replacement for medical diagnosis
+Accuracy depends on dataset quality
+Sensitive to lighting and image clarity
+Limited to trained skin condition classes
 🔮 Future Enhancements
-Deploy as a web/mobile application
-Integrate with cloud APIs
-Improve model accuracy with larger datasets
-Add multi-condition detection
-🤝 Acknowledgement
+🔍 More disease categories
+📊 Explainable AI (Grad-CAM visualization)
+📱 Mobile application version
+☁️ Cloud deployment (AWS / Azure)
+🤖 Integration with chatbot for consultation
+🤝 Contribution
 
-This project was developed during my internship at Infosys, which provided valuable exposure to building AI solutions for real-world problems.
+Contributions are welcome!
 
-📬 Contact
-GitHub: https://github.com/Akalya-005
-LinkedIn: 
+Steps:
+
+Fork the repo
+Create a new branch
+Commit your changes
+Submit a Pull Request
+📜 License
+
+This project is licensed under the MIT License.
+
+🙌 Acknowledgements
+Infosys Springboard Internship Program
+Open-source ML & Computer Vision communities
+Public dermatology datasets
+👩‍💻 Author
+
+Akalya K
+
+AI & ML Enthusiast|  AIDS Student
+Linkedin: https://www.linkedin.com/in/akalya-k-548937294?utm_source=share_via&utm_content=profile&utm_medium=member_android
+
+⭐ Final Note
+“AI in healthcare is not just innovation — it’s impact.”
