@@ -26,6 +26,7 @@ It is built as a full-stack application with a user-friendly frontend and a powe
 📊 Prediction summary & performance tracking
 📁 Export results (CSV + images)
 🌐 Clean and responsive UI
+
 🏗️ System Architecture
 User Input Image
         ↓
@@ -38,6 +39,7 @@ Deep Learning Model (CNN)
 Prediction (Skin Condition + Age)
         ↓
 Visualization & Output (UI + Export)
+
 🧠 Technologies Used
 🔹 Frontend
 HTML, CSS, JavaScript
@@ -53,6 +55,7 @@ CNN (Convolutional Neural Networks)
 Git & GitHub
 VS Code / PyCharm
 Jupyter Notebook
+
 📂 Project Structure
 DermalScan-AI/
 │
@@ -65,6 +68,7 @@ DermalScan-AI/
 ├── app.py                 # Main backend file
 ├── requirements.txt       # Dependencies
 └── README.md              # Documentation
+
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/Akalya-005/DermalScan-AI.git
@@ -79,6 +83,7 @@ pip install -r requirements.txt
 python app.py
 5️⃣ Open in Browser
 http://127.0.0.1:5000/
+
 🧪 How It Works
 User uploads an image
 System detects face(s) using OpenCV
@@ -88,6 +93,7 @@ Outputs:
 Skin condition classification
 Age estimation
 Results are displayed with annotations
+
 📊 Model Details
 Model Type: Convolutional Neural Network (CNN)
 Task: Image Classification + Feature Extraction
@@ -97,6 +103,7 @@ Optimization using Adam / SGD
 Output:
 Class probabilities
 Confidence score
+
 📈 Performance Metrics
 Accuracy
 Precision
